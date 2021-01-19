@@ -1,0 +1,9 @@
+<h1>Uploader</h1>
+
+<%= form_for @uploader, url: upload_path do |f| %>
+   <div class="form-group">
+      <%= f.label :file, "Upload CSV File" %>
+      <%= f.file_field :file, class: 'form-control-file', required: true %>
+   </div>
+   <%= f.button :submit, value: "Upload CSV", class: "btn btn-primary" %>
+<% end %>
