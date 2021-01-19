@@ -8,7 +8,7 @@ class UploaderController < ApplicationController
   def upload
 
     puts params[:file]
-    Uploader.import(params[:file])
+    #Uploader.import(params[:file])
 
   end
 
